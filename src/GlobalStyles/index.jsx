@@ -8,10 +8,10 @@ const StyledText = ({
   fontSize,
   fontWeight,
   align,
-  ...restOfProps // esto es por si hay otras props pasadas (como inline-styles) que no se controlan desde el array de textStyles
+  ...restOfProps
 }) => {
   const textStyles = [
-    styles.text, // estilo base, el q siempre va a estar
+    styles.text,
     color === "primary" && styles.colorPrimary,
     color === "secondary" && styles.colorSecundary,
     fontSize === "heading" && styles.Heading,
@@ -23,7 +23,6 @@ const StyledText = ({
       {children}
     </Text>
   );
-  // la prop style ademas de recibir objetos, puede recibir arrays con estilos definidos
 };
 
 const styles = StyleSheet.create({

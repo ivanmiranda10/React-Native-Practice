@@ -9,7 +9,6 @@ const parseThousands = (value) => {
 const RepositoryStats = (props) => {
   return (
     <View style={{ flexDirection: "row", justifyContent: "space-around" }}>
-      {/* Por defecto, el flexDirection de View es 'column' */}
       <View>
         <StyledText align="center" fontWeight="bold">
           {parseThousands(props.stargazersCount)}

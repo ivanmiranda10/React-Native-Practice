@@ -7,10 +7,8 @@ import NavbarLink from "./links";
 const Navbar = () => {
   return (
     <View style={styles.container}>
-      {/* <ScrollView horizontal> --> Si tuvieramos muchos items en el navbar */}
       <NavbarLink to="/">Repositories</NavbarLink>
       <NavbarLink to="/signin">Sign In</NavbarLink>
-      {/* </ScrollView> */}
     </View>
   );
 };

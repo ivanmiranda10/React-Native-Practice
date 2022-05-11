@@ -14,8 +14,6 @@ const NavbarLink = ({ children, to }) => {
         {children}
       </StyledText>
     </Link>
-    // Link de react-router-native renderiza por defecto un TouchableHighlight,
-    // para ver comporatimientos de este fijarse en sus props
   );
 };
 

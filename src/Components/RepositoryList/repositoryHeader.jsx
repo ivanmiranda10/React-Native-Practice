@@ -15,8 +15,6 @@ const RepositoryHeader = ({
         <Image style={styles.image} source={{ uri: ownerAvatarUrl }} />
       </View>
       <View style={{ flex: 1 }}>
-        {/* Con flex 1, ocupa todo el espacio disponible, haciendo un salto de
-          linea si este espacio es sobrepasado */}
         <StyledText fontSize="heading" fontWeight="bold">
           {fullName}
         </StyledText>
@@ -36,9 +34,9 @@ const styles = StyleSheet.create({
       ios: "#f64",
       default: "#c90",
     }),
-    alignSelf: "flex-start", // si no lo ponemos el backgroundColor ocupa todo el ancho de pantalla
+    alignSelf: "flex-start",
     borderRadius: 10,
-    marginVertical: 4, // top y bottom
+    marginVertical: 4,
     // overflow: "hidden",
   },
   image: {
